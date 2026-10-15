@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>AF Veyra</title>
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+
+      <div class="shape shape-one"></div>
+      <div class="shape shape-two"></div>
+      <div class="shape shape-three"></div>
+      <div class="shape shape-four"></div>
+    </div>
+
+    <header>
+      <!-- brand -->
+      <div class="brand">
+        <h1>AF Veyra</h1>
+        <span id="taglainText">Desion. Build. Evolve</span>
+      </div>
+      <!-- navigation -->
+      <nav>
+        <a href="#">
+          <i class="fa-solid fa-house"></i>
+          <span id="homeText">Home</span>
+        </a>
+        <!-- part of university btn -->
+        <div class="dropdown">
+          <a href="#" class="dropdown-btn">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span id="UniversityText">University</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="https://sama.medilam.ac.ir/CAS/Account/Login" target="_blank">Ham Ava Website</a>
+            <a href="https://projects.medilam.ac.ir/site/index" target="_blank">Proposal Website</a>
+            <a href="https://samalive.ir/#/landing-page" target="_blank">Sama Live</a>
+            <a href="https://www.medilam.ac.ir/" target="_blank">University Website</a>
+            <a href="https://library.medilam.ac.ir/dl/usersearch/" target="_blank">University Library</a>
+            <a href="http://medilam.daneshlink.ir/" target="_blank">Danesh Linke</a>
+          </div>
+        </div>
+
+        <!-- part of Programing btn -->
+        <div class="dropdown">
+          <a href="#" class="dropdown-btn">
+            <i class="fa-solid fa-code"></i>
+            <span id="ProgramingText">Programing</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#">Extention.vscode.download1</a>
+            <a href="#">vs Library download</a>
+            <a href="#">kodiad Site</a>
+            <a href="#">Extention.vscode.download2</a>
+            <a href="#">sufui lern</a>
+          </div>
+        </div>
+
+        <!-- part of app btn -->
+        <div class="dropdown">
+          <a href="#" class="dropdown-btn">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span id="appsText">Apps</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="https://web.rubika.ir" target="_blank">Rubika</a>
+            <a href="https://web.bale.ai" target="_blank">bale</a>
+          </div>
+        </div>
+
+        <!-- part of check site  -->
+        <a href="#">
+          <i class="fa-solid fa-globe"></i>
+          <span id="checkSite">Check Site</span>
+        </a>
+      </nav>
+
+      <!-- google search -->
+      <form
+        class="search-box"
+        action="https://www.google.com/search"
+        method="get"
+      >
+        <input
+          type="text"
+          name="q"
+          placeholder="search Google"
+          id="searchInput"
+        />
+        <button type="submit"><i class="fa-solid fa-search"></i></button>
+      </form>
+
+      <!-- hamberger -->
+      <button
+        class="menu-button"
+        id="mobileMenuButton"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="settings-panel" id="settingsPanel" onblur="closeMenu()">
+        <button class="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 id="settingTitle">settings</h2>
+        <div class="setting-item">
+          <span id="darkModeText">Dark Mode</span>
+          <button class="toggle-button" id="darkModeToggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+
+        <div class="setting-item">
+          <span id="languageText">Language</span>
+          <button class="language-button" id="languageButton">
+            <i class="fa-solid fa-globe"></i>
+          </button>
+        </div>
+        <div class="language-menu" id="languageMenu">
+          <button id="persianLanguage">فارسی</button>
+          <button id="englishLanguage">English</button>
+        </div>
+        <hr class="menu-divider">
+
+<h3 class="panel-heading">Site Menu</h3>
+
+<div class="panel-nav">
+
+    <a href="index.html" class="panel-link">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <details class="panel-dropdown">
+        <summary>
+            <span><i class="fa-solid fa-graduation-cap"></i> University</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </summary>
+
+        <div class="panel-submenu">
+            
+            <a href="https://sama.medilam.ac.ir/CAS/Account/Login">Ham Ava Website</a>
+            <a href="https://projects.medilam.ac.ir/site/index">Proposal Website</a>
+            <a href="https://samalive.ir/#/landing-page">Sama Live</a>
+            <a href="https://www.medilam.ac.ir/" target="_blank">University Website</a>
+            <a href="https://library.medilam.ac.ir/dl/usersearch/">University Library</a>
+        </div>
+    </details>
+
+    <details class="panel-dropdown">
+        <summary>
+            <span><i class="fa-solid fa-code"></i>Programing</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </summary>
+
+        <div class="panel-submenu">
+            <a href="#">Extention.vscode.download1</a>
+            <a href="#">vs Library download</a>
+            <a href="#">kodiad Site</a>
+            <a href="#">Extention.vscode.download2</a>
+            <a href="#">sufui lern</a>
+          <div class="dropdown-menu">
+            
+    </details>
+
+    <details class="panel-dropdown">
+        <summary>
+            <span><i class="fa-solid fa-mobile-screen-button"></i>Apps</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </summary>
+
+        <div class="panel-submenu">
+             <a href="https://web.rubika.ir">Rubika</a>
+            <a href="https://web.bale.ai">bale</a>
+        </div>
+    </details>
+
+    <a href="website-check.html" class="panel-link">
+        <i class="fa-solid fa-globe"></i>
+        <span>Check Site</span>
+    </a>
+
+</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-conten">
+          <h1>Design Your Digital Future</h1>
+          <p>Explore idease. build project, and discover new possibilities.</p>
+
+          <a href="#usefultools" class="hero-button"
+            >Explore More
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="useful-tools" id="useful-tools">
+        <div class="section-heading">
+          <h2>Useful Tools</h2>
+          <p>Everything you need, all in one place.</p>
+        </div>
+
+        <div class="tools-grid">
+          <div class="tool-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Code Tools</h3>
+            <p>Useful tools for your coding workflow.</p>
+          </div>
+
+          <div class="tool-card">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Web Tools</h3>
+            <p>Explore tools for everyday web tasks.</p>
+          </div>
+
+          <div class="tool-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Study Tools</h3>
+            <p>Make learning easier and more organized.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<a
+  href="https://chatgpt.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="chatgpt-float"
+  aria-label="Open ChatGPT"
+  title="Open ChatGPT"
+>
+  
+<svg
+  class="chatgpt-icon"
+  viewBox="0 0 24 24"
+  width="24"
+  height="24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.8"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+>
+  <path d="M12 3.5a4.5 4.5 0 0 0-4.3 3.2
+  4.5 4.5 0 0 0-3.1 6.8
+  4.5 4.5 0 0 0 3.8 6.9
+  4.5 4.5 0 0 0 7.3-.4
+  4.5 4.5 0 0 0 3.1-6.8
+  4.5 4.5 0 0 0-3.8-6.9
+  4.5 4.5 0 0 0-3-2.8Z"/>
+  <path d="m7.7 6.7 8.6 4.9
+  M4.6 13.5l8.6 4.9
+  M7.7 17.3l8.6-4.9
+  M7.7 11.6l8.6-4.9
+  M12 3.5v9
+  M19.4 13.2l-7.4 4.3"/>
+</svg>
+
+  <span>ChatGPT</span>
+</a>
+
+    <script src="./javascripte/script.js"></script>
+  </body>
+</html>
